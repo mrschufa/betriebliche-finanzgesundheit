@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Betriebliche Finanzgesundheit – Definition, Bedeutung & Maßnahmen</title>
+  <meta name="description" content="Was ist Betriebliche Finanzgesundheit? Definition, Ursachen, Kosten und Lösungsansätze für Unternehmen. Der umfassende Ratgeber zum Thema finanzielle Gesundheit am Arbeitsplatz." />
+  <meta name="keywords" content="Betriebliche Finanzgesundheit, finanzielle Gesundheit Mitarbeiter, Mitarbeiterverschuldung, BGM Finanzen, Finanzstress Arbeitsplatz, Schulden Mitarbeiter Unternehmen, Betriebliches Gesundheitsmanagement Finanzen" />
+  <meta name="author" content="Tibor Bauer – areté Coaching & Vision" />
+  <link rel="canonical" href="https://betriebliche-finanzgesundheit.de" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Betriebliche Finanzgesundheit – Definition, Bedeutung & Maßnahmen" />
+  <meta property="og:description" content="Was ist Betriebliche Finanzgesundheit? Der umfassende Ratgeber für HR und Unternehmensführung." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://betriebliche-finanzgesundheit.de" />
+  <meta property="og:locale" content="de_DE" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://betriebliche-finanzgesundheit.de/#website",
+        "url": "https://betriebliche-finanzgesundheit.de",
+        "name": "Betriebliche Finanzgesundheit",
+        "inLanguage": "de-DE",
+        "publisher": { "@id": "https://arete-vision.de/#organization" }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://betriebliche-finanzgesundheit.de/#article",
+        "headline": "Betriebliche Finanzgesundheit – Definition, Bedeutung und Maßnahmen",
+        "description": "Was ist Betriebliche Finanzgesundheit? Definition, Ursachen, Kosten und Lösungsansätze für Unternehmen.",
+        "author": { "@id": "https://arete-vision.de/#tibor-bauer" },
+        "publisher": { "@id": "https://arete-vision.de/#organization" },
+        "inLanguage": "de-DE",
+        "url": "https://betriebliche-finanzgesundheit.de"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Was ist Betriebliche Finanzgesundheit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Betriebliche Finanzgesundheit bezeichnet die gezielte Förderung finanzieller Kompetenz, Stabilität und Resilienz von Mitarbeitenden im Unternehmenskontext. Sie ist ein eigenständiges Handlungsfeld im Betrieblichen Gesundheitsmanagement (BGM), das finanzielle Sorgen als Ursache von Produktivitätsverlust, Krankenstand und Fluktuation adressiert."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Welche Kosten entstehen durch Finanzstress bei Mitarbeitenden?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Laut Institut der deutschen Wirtschaft verursachen Krankheitstage in Deutschland jährlich Kosten von über 82 Milliarden Euro. Finanzstress ist einer der häufigsten Auslöser psychischer Erkrankungen und damit ein bedeutender Kostentreiber für Unternehmen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Was können Unternehmen für die Betriebliche Finanzgesundheit tun?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Unternehmen können durch Aufklärungsvorträge, Mitarbeiterschulungen, strategische Beratung und Krisenintervention aktiv zur finanziellen Gesundheit ihrer Belegschaft beitragen. Entscheidend ist ein proaktiver, entstigmatisierender Ansatz, der Mitarbeitende aktiv erreicht."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:        #0f1117;
+      --ink-soft:   #3d4150;
+      --ink-faint:  #7a7f8e;
+      --surface:    #ffffff;
+      --surface-2:  #f4f5f7;
+      --surface-3:  #ecedf0;
+      --accent:     #1a56db;
+      --accent-soft:#dbeafe;
+      --accent-dark:#1240a6;
+      --warn:       #c2410c;
+      --warn-soft:  #fff0eb;
+      --success:    #166534;
+      --success-soft:#dcfce7;
+      --border:     #dde0e7;
+      --radius:     10px;
+      --max-w:      860px;
+      --font-serif: 'DM Serif Display', Georgia, serif;
+      --font-sans:  'DM Sans', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: var(--font-sans);
+      font-weight: 400;
+      color: var(--ink);
+      background: var(--surface);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1.5rem;
+    }
+    .header-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+    .logo span { color: var(--accent); }
+    nav { display: flex; gap: 1.5rem; align-items: center; }
+    nav a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--accent); }
+    .nav-cta {
+      background: var(--accent);
+      color: #fff !important;
+      padding: 0.45rem 1rem;
+      border-radius: 6px;
+      font-size: 0.8rem !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--accent-dark) !important; }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 5rem 1.5rem 4rem;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.3rem 0.75rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
+      max-width: 720px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .hero-lead {
+      font-size: 1.15rem;
+      color: var(--ink-soft);
+      max-width: 620px;
+      margin-bottom: 2.5rem;
+      line-height: 1.65;
+    }
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .stat-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      font-size: 0.875rem;
+    }
+    .stat-pill strong { color: var(--ink); font-weight: 600; }
+    .stat-pill span { color: var(--ink-faint); }
+    .hero-scroll {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--ink-faint);
+    }
+    .hero-scroll svg { animation: bounce 2s infinite; }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(4px); }
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      height: 1px;
+      background: var(--border);
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    .section + .section { padding-top: 0; }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 0.75rem;
+    }
+    h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 3.5vw, 2.25rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
+    }
+    h3 {
+      font-family: var(--font-sans);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+    p { color: var(--ink-soft); margin-bottom: 1rem; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── DEFINITION BOX ── */
+    .definition-box {
+      background: var(--ink);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      margin: 2rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .definition-box::before {
+      content: '"';
+      position: absolute;
+      top: -0.5rem;
+      left: 1.5rem;
+      font-family: var(--font-serif);
+      font-size: 8rem;
+      color: rgba(255,255,255,0.06);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .definition-box p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      position: relative;
+      z-index: 1;
+    }
+    .definition-box cite {
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.45);
+      font-style: normal;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── ALERT BAND ── */
+    .alert-band {
+      background: var(--warn-soft);
+      border-left: 4px solid var(--warn);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .alert-band p { color: var(--ink-soft); font-size: 0.95rem; margin: 0; }
+    .alert-band strong { color: var(--warn); }
+
+    /* ── STAT CARDS ── */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .stat-card {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+    }
+    .stat-card .number {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      color: var(--ink);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .stat-card .number.warn { color: var(--warn); }
+    .stat-card .label {
+      font-size: 0.85rem;
+      color: var(--ink-faint);
+      line-height: 1.4;
+    }
+    .stat-card .source {
+      font-size: 0.7rem;
+      color: var(--ink-faint);
+      margin-top: 0.5rem;
+      opacity: 0.6;
+    }
+
+    /* ── CHAIN ── */
+    .chain {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 1.5rem 0;
+    }
+    .chain-item {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.5rem 0.9rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+    .chain-arrow {
+      color: var(--ink-faint);
+      font-size: 1.1rem;
+    }
+    .chain-item.highlight {
+      background: var(--warn-soft);
+      border-color: #fed7aa;
+      color: var(--warn);
+    }
+
+    /* ── MEASURE CARDS ── */
+    .measure-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .measure-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .measure-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+    .measure-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--accent-soft);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+    .measure-card h3 { font-size: 1rem; margin-bottom: 0.4rem; }
+    .measure-card p { font-size: 0.875rem; }
+
+    /* ── COMPARISON TABLE ── */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+    }
+    .compare-table th {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      background: var(--surface-2);
+      border-bottom: 2px solid var(--border);
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .compare-table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--ink-soft);
+      vertical-align: top;
+    }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table .good { color: var(--success); font-weight: 600; }
+    .compare-table .bad { color: var(--warn); font-weight: 600; }
+    .compare-table td:first-child { font-weight: 500; color: var(--ink); }
+
+    /* ── BENEFIT LIST ── */
+    .benefit-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 0.75rem;
+      margin: 1.5rem 0;
+    }
+    .benefit-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+    }
+    .benefit-list li::before {
+      content: '✓';
+      color: var(--success);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    /* ── CTA SECTION ── */
+    .cta-section {
+      background: var(--surface-2);
+      border-top: 1px solid var(--border);
+      padding: 4rem 1.5rem;
+    }
+    .cta-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: center;
+    }
+    .cta-inner h2 {
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      margin-bottom: 0.5rem;
+    }
+    .cta-inner p { font-size: 0.95rem; margin: 0; }
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      white-space: nowrap;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .cta-btn:hover { background: var(--accent-dark); transform: translateY(-1px); }
+
+    /* ── ABOUT TIBOR ── */
+    .about-box {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      margin: 2rem 0;
+    }
+    .about-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--surface-3);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+    }
+    .about-box h3 { margin-bottom: 0.25rem; }
+    .about-box .role {
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.6rem;
+    }
+    .about-box p { font-size: 0.9rem; }
+    .about-box a { color: var(--accent); text-decoration: none; font-weight: 500; }
+    .about-box a:hover { text-decoration: underline; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+    }
+    .footer-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    footer p { font-size: 0.8rem; color: var(--ink-faint); margin: 0; }
+    footer a { color: var(--ink-faint); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+    .footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+
+    /* ── TOC ── */
+    .toc {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .toc-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 0.75rem;
+    }
+    .toc ol {
+      padding-left: 1.25rem;
+      margin: 0;
+    }
+    .toc li { margin-bottom: 0.4rem; }
+    .toc a {
+      font-size: 0.875rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .toc a:hover { text-decoration: underline; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      nav { gap: 1rem; }
+      nav a:not(.nav-cta) { display: none; }
+      .cta-inner { grid-template-columns: 1fr; }
+      .about-box { flex-direction: column; }
+      .compare-table { font-size: 0.8rem; }
+      .compare-table th, .compare-table td { padding: 0.5rem 0.6rem; }
+    }
+
+    /* ── SCROLL ANIMATIONS ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">Betriebliche <span>Finanzgesundheit</span></a>
+    <nav>
+      <a href="#definition">Definition</a>
+      <a href="#ursachen">Ursachen</a>
+      <a href="#massnahmen">Maßnahmen</a>
+      <a href="https://arete-vision.de/kontakt" target="_blank" class="nav-cta">Beratung anfragen →</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M6 4v3M6 8.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    Neues Handlungsfeld im BGM
+  </div>
+  <h1>Betriebliche Finanzgesundheit — <em>was Unternehmen jetzt wissen müssen</em></h1>
+  <p class="hero-lead">Finanzielle Sorgen sind einer der größten, aber am häufigsten ignorierten Stressfaktoren in deutschen Unternehmen. Die Folgen sind messbar: Krankenstand, Produktivitätsverlust, Fluktuation. Dieser Ratgeber erklärt, was Betriebliche Finanzgesundheit bedeutet — und was Unternehmen konkret tun können.</p>
+  <div class="hero-stats">
+    <div class="stat-pill">
+      <strong>82 Mrd. €</strong>
+      <span>Krankenstandkosten jährlich (IDW 2024)</span>
+    </div>
+    <div class="stat-pill">
+      <strong>36 %</strong>
+      <span>der Mitarbeitenden ohne Rücklagen (WTW)</span>
+    </div>
+    <div class="stat-pill">
+      <strong>1 von 5</strong>
+      <span>berichtet Leistungseinbußen durch Finanzstress</span>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Zum Ratgeber scrollen
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TABLE OF CONTENTS -->
+<section class="section fade-in">
+  <div class="toc">
+    <div class="toc-title">Inhalt</div>
+    <ol>
+      <li><a href="#definition">Was ist Betriebliche Finanzgesundheit?</a></li>
+      <li><a href="#abgrenzung">Abgrenzung zum klassischen BGM</a></li>
+      <li><a href="#ursachen">Ursachen und Verbreitung</a></li>
+      <li><a href="#folgen">Folgen für Unternehmen</a></li>
+      <li><a href="#massnahmen">Maßnahmen und Lösungsansätze</a></li>
+      <li><a href="#proaktiv">Reaktiv vs. proaktiv</a></li>
+      <li><a href="#nutzen">Nutzen für Arbeitgeber</a></li>
+      <li><a href="#experte">Expertenhinweis</a></li>
+    </ol>
+  </div>
+</section>
+
+<!-- DEFINITION -->
+<section class="section fade-in" id="definition">
+  <div class="section-label">01 — Definition</div>
+  <h2>Was ist Betriebliche Finanzgesundheit?</h2>
+  <p>Betriebliche Finanzgesundheit ist ein Begriff, der die finanzielle Situation von Mitarbeitenden als betriebliches Gesundheitsthema begreift und adressiert. Er beschreibt die gezielte Förderung finanzieller Kompetenz, Stabilität und Resilienz von Mitarbeitenden — nicht als privates Problem, sondern als unternehmerische Verantwortung.</p>
+
+  <div class="definition-box">
+    <p>Betriebliche Finanzgesundheit bezeichnet die systematische Stärkung der finanziellen Kompetenz und Stabilität von Mitarbeitenden als Teil des betrieblichen Gesundheitsmanagements. Ziel ist es, finanzielle Sorgen als Ursache von Produktivitätsverlust, psychischer Belastung und Fluktuation proaktiv zu adressieren — durch Aufklärung, Entstigmatisierung und konkrete Unterstützungsangebote.</p>
+    <cite>Begriffsschöpfung: Tibor Bauer, areté | Coaching &amp; Vision, 2025</cite>
+  </div>
+
+  <p>Der Begriff wurde von Tibor Bauer geprägt, um ein in deutschen Unternehmen weitgehend tabuisiertes Thema aus der Grauzone zu holen und in den strategischen Kontext von Personalführung, BGM und Unternehmenskultur zu integrieren. Betriebliche Finanzgesundheit ist bisher kein etablierter Begriff im deutschen Unternehmenskontext — was zugleich Problem und Chance ist.</p>
+</section>
+
+<!-- ABGRENZUNG -->
+<section class="section fade-in" id="abgrenzung">
+  <div class="section-label">02 — Einordnung</div>
+  <h2>Abgrenzung zum klassischen BGM</h2>
+  <p>Betriebliches Gesundheitsmanagement (BGM) befasst sich traditionell mit körperlicher und psychischer Gesundheit am Arbeitsplatz — Ergonomie, Bewegung, Stressprävention, Ernährung. Betriebliche Finanzgesundheit schließt eine systematisch übersehene Lücke:</p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Aspekt</th>
+        <th>Klassisches BGM</th>
+        <th>Betriebliche Finanzgesundheit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Fokus</td>
+        <td>Körper, Psyche, Bewegung</td>
+        <td class="good">Finanzielle Lage und Kompetenz</td>
+      </tr>
+      <tr>
+        <td>Verbreitung</td>
+        <td>Etabliert, gefördert durch Krankenkassen</td>
+        <td class="warn">Neuland — noch nicht standardisiert</td>
+      </tr>
+      <tr>
+        <td>Ansatz</td>
+        <td>Oft symptomorientiert</td>
+        <td class="good">Ursachenorientiert, präventiv</td>
+      </tr>
+      <tr>
+        <td>Tabu-Ebene</td>
+        <td>Niedrig — offen kommunizierbar</td>
+        <td class="warn">Hoch — Schulden sind Scham-Thema</td>
+      </tr>
+      <tr>
+        <td>Unternehmensnutzen</td>
+        <td>Krankenstand, Wohlbefinden</td>
+        <td class="good">+ Produktivität, Bindung, Loyalität</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Die Integration von Betrieblicher Finanzgesundheit in bestehende BGM-Strukturen ist naheliegend und strategisch sinnvoll. Sie erweitert das Verständnis von Mitarbeitergesundheit um eine Dimension, die direkte wirtschaftliche Auswirkungen hat.</p>
+</section>
+
+<!-- URSACHEN -->
+<section class="section fade-in" id="ursachen">
+  <div class="section-label">03 — Ursachen</div>
+  <h2>Warum geraten Mitarbeitende in finanzielle Not?</h2>
+  <p>Finanzielle Probleme entstehen selten durch Fahrlässigkeit. Die häufigsten Auslöser sind Lebensereignisse, die jeden treffen können — und die in Deutschland strukturell kaum aufgefangen werden:</p>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="number warn">1</div>
+      <div class="label">Trennung oder Scheidung — häufigste Einzelursache für finanzielle Überlastung</div>
+    </div>
+    <div class="stat-card">
+      <div class="number warn">2</div>
+      <div class="label">Arbeitslosigkeit oder Kurzarbeit — fehlende Rücklagen eskalieren schnell</div>
+    </div>
+    <div class="stat-card">
+      <div class="number warn">3</div>
+      <div class="label">Krankheit — eigene oder in der Familie, oft mit Einkommensausfall verbunden</div>
+    </div>
+    <div class="stat-card">
+      <div class="number warn">4</div>
+      <div class="label">Mangelnde Finanzbildung — kein Schuldfach, keine Elternweitergabe</div>
+    </div>
+  </div>
+
+  <div class="alert-band">
+    <p><strong>Wichtig:</strong> Über 36 % der Beschäftigten in Deutschland verfügen laut Willis Towers Watson über keine finanziellen Rücklagen. Mehr als ein Fünftel berichtet direkte Leistungseinbußen durch finanzielle Sorgen — eine erhebliche, aber weitgehend unsichtbare Belastung für Unternehmen.</p>
+  </div>
+
+  <p>Die gesellschaftliche Tabuisierung von Schulden und finanziellen Schwierigkeiten verschärft das Problem: Betroffene schweigen aus Scham, holen sich keine Hilfe und verlieren schleichend Leistungsfähigkeit, Motivation und emotionale Bindung an den Arbeitgeber.</p>
+</section>
+
+<!-- FOLGEN -->
+<section class="section fade-in" id="folgen">
+  <div class="section-label">04 — Folgen</div>
+  <h2>Was Finanzstress im Unternehmen wirklich kostet</h2>
+  <p>Die Verbindung zwischen finanzieller Not und Arbeitsleistung ist wissenschaftlich gut belegt. Die Wirkkette ist direkt:</p>
+
+  <div class="chain">
+    <div class="chain-item">Finanzielle Sorgen</div>
+    <div class="chain-arrow">→</div>
+    <div class="chain-item">Chronischer Stress</div>
+    <div class="chain-arrow">→</div>
+    <div class="chain-item">Konzentrationsprobleme</div>
+    <div class="chain-arrow">→</div>
+    <div class="chain-item highlight">Produktivitätsverlust</div>
+    <div class="chain-arrow">→</div>
+    <div class="chain-item highlight">Krankenstand</div>
+    <div class="chain-arrow">→</div>
+    <div class="chain-item highlight">Kündigung</div>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="number">82 Mrd.</div>
+      <div class="label">Euro Krankenstandkosten in Deutschland jährlich</div>
+      <div class="source">Quelle: Institut der deutschen Wirtschaft, 2024</div>
+    </div>
+    <div class="stat-card">
+      <div class="number warn">36 %</div>
+      <div class="label">der Beschäftigten ohne finanzielle Rücklagen</div>
+      <div class="source">Quelle: Willis Towers Watson</div>
+    </div>
+    <div class="stat-card">
+      <div class="number">1 von 5</div>
+      <div class="label">Mitarbeitenden gibt direkte Leistungseinbußen durch Finanzstress an</div>
+      <div class="source">Quelle: Willis Towers Watson</div>
+    </div>
+  </div>
+
+  <p>Hinzu kommen schwer messbare, aber reale Kosten: innere Kündigung, sinkende Loyalität, erhöhte Fehlerquoten, schlechteres Betriebsklima und die hohen Rekrutierungskosten, wenn ein erfahrener Mitarbeitender schließlich geht.</p>
+
+  <div class="alert-band">
+    <p><strong>Rechenbeispiel:</strong> Die durchschnittlichen Kosten für eine Neubesetzung liegen je nach Qualifikationsniveau bei <strong>30–150 % eines Jahresgehalts</strong>. Ein Unternehmen mit 200 Mitarbeitenden und 5 % vermeidbarer Fluktuation verliert rechnerisch mehrere Hunderttausend Euro — oft ohne es direkt auf Finanzstress zurückzuführen.</p>
+  </div>
+</section>
+
+<!-- MASSNAHMEN -->
+<section class="section fade-in" id="massnahmen">
+  <div class="section-label">05 — Maßnahmen</div>
+  <h2>Was Unternehmen konkret tun können</h2>
+  <p>Betriebliche Finanzgesundheit ist kein abstraktes Konzept. Es gibt konkrete, sofort umsetzbare Maßnahmen — modular, skalierbar und auf unterschiedliche Unternehmensgrößen und Branchen anpassbar:</p>
+
+  <div class="measure-grid">
+    <div class="measure-card">
+      <div class="measure-icon">🎤</div>
+      <h3>Vorträge & Keynotes</h3>
+      <p>Aufklärung für die gesamte Belegschaft — zu Schufa, Bonität, Schuldenprävention und finanziellen Grundlagen. Niedrigschwellig, entstigmatisierend, ohne erhobenen Zeigefinger.</p>
+    </div>
+    <div class="measure-card">
+      <div class="measure-icon">🏫</div>
+      <h3>Mitarbeiterschulungen</h3>
+      <p>Praxisnahe Workshops in kleinen Gruppen. Mitarbeitende erhalten konkrete Handlungsoptionen für ihre Situation — anonym und vertraulich.</p>
+    </div>
+    <div class="measure-card">
+      <div class="measure-icon">🧭</div>
+      <h3>Führungskräfte-Sensibilisierung</h3>
+      <p>Führungskräfte lernen, Warnsignale zu erkennen und angemessen zu reagieren — ohne in Beratung oder Rechtsberatung zu geraten.</p>
+    </div>
+    <div class="measure-card">
+      <div class="measure-icon">📋</div>
+      <h3>Strategische BGM-Beratung</h3>
+      <p>Integration von Betrieblicher Finanzgesundheit in bestehende BGM-Strukturen. Entwicklung von Maßnahmenkatalogen und internen Unterstützungsangeboten.</p>
+    </div>
+    <div class="measure-card">
+      <div class="measure-icon">🆘</div>
+      <h3>Krisenintervention</h3>
+      <p>Vertrauliche Einzelberatung bei akuten finanziellen Notlagen — Lohnpfändung, drohende Insolvenz, extremem Druck. Schnell, diskret, wirkungsvoll.</p>
+    </div>
+    <div class="measure-card">
+      <div class="measure-icon">📊</div>
+      <h3>Konzepte & Maßnahmenpläne</h3>
+      <p>Entwicklung betriebsspezifischer Programme, die Unternehmenskultur, Branche und Belegschaftsstruktur berücksichtigen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROAKTIV VS REAKTIV -->
+<section class="section fade-in" id="proaktiv">
+  <div class="section-label">06 — Haltung</div>
+  <h2>Reaktiv oder proaktiv: Ein entscheidender Unterschied</h2>
+  <p>Viele Unternehmen reagieren erst, wenn der Schaden sichtbar ist — Lohnpfändung, Langzeitkrankenstand, Kündigung. Andere setzen auf anonyme Hilfsangebote wie externe Beratungstelefone. Der Unterschied zur aktiven Förderung von Betrieblicher Finanzgesundheit ist grundlegend:</p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Ansatz</th>
+        <th>Anonymes Hilfstelefon</th>
+        <th>Betriebliche Finanzgesundheit (aktiv)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Haltung des Unternehmens</td>
+        <td class="bad">Reaktiv — Problem wird delegiert</td>
+        <td class="good">Proaktiv — Unternehmen zeigt Verantwortung</td>
+      </tr>
+      <tr>
+        <td>Reichweite</td>
+        <td class="bad">Nur die, die sich aktiv melden</td>
+        <td class="good">Erreicht auch stille Betroffene</td>
+      </tr>
+      <tr>
+        <td>Unternehmenskultur</td>
+        <td class="bad">Fürsorge bleibt unsichtbar</td>
+        <td class="good">Wertschätzung wird spürbar und sichtbar</td>
+      </tr>
+      <tr>
+        <td>Wirkung auf Loyalität</td>
+        <td class="bad">Gering</td>
+        <td class="good">Hoch — stärkt Bindung und Vertrauen</td>
+      </tr>
+      <tr>
+        <td>Entstigmatisierung</td>
+        <td class="bad">Findet nicht statt</td>
+        <td class="good">Aktiver Teil des Konzepts</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Wer eine Telefonnummer ins Intranet stellt, schiebt das Problem weg. Wer aktiv handelt, zeigt Haltung — und das merken Mitarbeitende.</p>
+</section>
+
+<!-- NUTZEN -->
+<section class="section fade-in" id="nutzen">
+  <div class="section-label">07 — Nutzen</div>
+  <h2>Konkrete Vorteile für Arbeitgeber</h2>
+  <p>Die Investition in Betriebliche Finanzgesundheit zahlt sich auf mehreren Ebenen aus:</p>
+
+  <ul class="benefit-list">
+    <li>Reduktion von Krankenstand und Fehlzeiten</li>
+    <li>Geringere Mitarbeiterfluktuation und Rekrutierungskosten</li>
+    <li>Höhere Produktivität und Konzentrationsfähigkeit</li>
+    <li>Stärkere Mitarbeiterbindung und emotionale Loyalität</li>
+    <li>Sichtbare Unternehmenskultur der Wertschätzung</li>
+    <li>Positives Arbeitgeberimage nach innen und außen</li>
+    <li>ESG- und CSR-konforme Maßnahme</li>
+    <li>Messbare ROI-Effekte durch geringere Fluktuation</li>
+    <li>Attraktivität für neue Fachkräfte im Wettbewerb</li>
+    <li>Entstigmatisierung schafft offenere Unternehmenskultur</li>
+  </ul>
+
+  <p>Betriebliche Finanzgesundheit ist kein Luxusthema für große Konzerne. Gerade mittelständische Unternehmen, bei denen jeder Ausfall spürbar ist, profitieren überproportional von einem proaktiven Ansatz.</p>
+</section>
+
+<!-- ABOUT TIBOR -->
+<section class="section fade-in" id="experte">
+  <div class="section-label">08 — Hintergrund</div>
+  <h2>Wer steht hinter diesem Begriff?</h2>
+  <p>Das Konzept der Betrieblichen Finanzgesundheit wurde von <strong>Tibor Bauer</strong> geprägt — nicht als akademische Theorie, sondern aus der Praxis heraus. Als einer der bekanntesten Finanzaufklärer im deutschsprachigen Raum hat er das Ziel, ein in Unternehmen tabuisiertes Thema sichtbar und handhabbar zu machen.</p>
+
+  <div class="about-box">
+    <div class="about-avatar">👤</div>
+    <div>
+      <h3>Tibor Bauer</h3>
+      <div class="role">Schöpfer des Begriffs „Betriebliche Finanzgesundheit" · areté | Coaching &amp; Vision</div>
+      <p>Bekannt als „Mr. Schuldenfrei", erreicht Tibor Bauer jährlich über 30 Millionen Menschen durch TikTok, Social Media und Medienauftritte. Sein Buch „101 Fragen zur Schufa" erschien 2026 im GABAL Verlag. Mit <strong>areté | Coaching &amp; Vision</strong> bietet er Unternehmen strukturierte Lösungen zur Betrieblichen Finanzgesundheit — von Vorträgen über Schulungen bis zur strategischen Beratung.</p>
+      <p><a href="https://arete-vision.de" target="_blank" rel="noopener">→ Mehr zu areté | Coaching &amp; Vision</a> &nbsp;·&nbsp; <a href="https://arete-vision.de/kontakt" target="_blank" rel="noopener">→ Kontakt aufnehmen</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="cta-inner">
+    <div>
+      <h2>Betriebliche Finanzgesundheit in Ihrem Unternehmen einführen?</h2>
+      <p>Tibor Bauer und areté | Coaching &amp; Vision begleiten Unternehmen von der ersten Aufklärung bis zur strategischen Verankerung im BGM.</p>
+    </div>
+    <a href="https://arete-vision.de/kontakt" target="_blank" rel="noopener" class="cta-btn">
+      Jetzt unverbindlich anfragen
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <p>© 2026 betriebliche-finanzgesundheit.de · Ein Informationsangebot von <a href="https://arete-vision.de" target="_blank" rel="noopener">areté | Coaching &amp; Vision</a></p>
+    <div class="footer-links">
+      <a href="https://arete-vision.de/impressum" target="_blank" rel="noopener">Impressum</a>
+      <a href="https://arete-vision.de/datenschutz" target="_blank" rel="noopener">Datenschutz</a>
+      <a href="https://arete-vision.de" target="_blank" rel="noopener">areté | Coaching &amp; Vision</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
